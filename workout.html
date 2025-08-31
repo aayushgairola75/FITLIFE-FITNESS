@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Workout Plans – FitLife</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+  <link href="css/style.css" rel="stylesheet"/>
+  <style>.card{transition:transform .3s, box-shadow .3s}.card:hover{transform:translateY(-6px);box-shadow:0 10px 20px rgba(0,0,0,.2)}</style>
+</head>
+<body>
+  <!-- NAV -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html"><i class="fas fa-dumbbell me-2"></i>FitLife</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav"><span class="navbar-toggler-icon"></span></button>
+      <div id="nav" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="workout.html">Workout</a></li>
+          <li class="nav-item"><a class="nav-link" href="nutrition.html">Nutrition</a></li>
+          <li class="nav-item"><a class="nav-link" href="feedback.html">Feedback</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HEADER -->
+  <section class="py-5 bg-success text-white" style="margin-top:76px">
+    <div class="container text-center">
+      <h1 class="display-5 fw-bold mb-2">Workout Plans</h1>
+      <p class="lead mb-0">Choose your goal and start your transformation</p>
+    </div>
+  </section>
+
+  <!-- TABS -->
+  <section class="py-5">
+    <div class="container">
+      <ul class="nav nav-pills justify-content-center mb-5" id="workoutTabs" role="tablist">
+        <li class="nav-item"><button class="nav-link active" id="muscle-tab" data-bs-toggle="pill" data-bs-target="#muscle" type="button"><i class="fas fa-dumbbell me-2"></i>Muscle Gain</button></li>
+        <li class="nav-item"><button class="nav-link" id="fat-tab" data-bs-toggle="pill" data-bs-target="#fat" type="button"><i class="fas fa-fire me-2"></i>Fat Loss</button></li>
+        <li class="nav-item"><button class="nav-link" id="recomp-tab" data-bs-toggle="pill" data-bs-target="#recomp" type="button"><i class="fas fa-balance-scale me-2"></i>Recomposition</button></li>
+      </ul>
+
+      <div class="tab-content">
+        <!-- MUSCLE -->
+        <div class="tab-pane fade show active" id="muscle">
+          <div class="text-center mb-4">
+            <h2 class="fw-bold">Muscle Gain Program</h2>
+            <p class="text-muted">Progressive overload for size & strength</p>
+            <div class="btn-group" role="group">
+              <input type="radio" class="btn-check" name="muscleSwitch" id="muscleGym" checked>
+              <label class="btn btn-outline-success" for="muscleGym"><i class="fas fa-dumbbell me-2"></i>Gym</label>
+              <input type="radio" class="btn-check" name="muscleSwitch" id="muscleHome">
+              <label class="btn btn-outline-success" for="muscleHome"><i class="fas fa-home me-2"></i>Home</label>
+            </div>
+          </div>
+
+          <div id="muscleGymContent">
+            <div class="row g-4">
+              <div class="col-lg-6"><div class="card border-0 shadow-sm"><div class="card-body p-4">
+                <h5 class="text-success"><i class="fas fa-dumbbell me-2"></i>Push Day</h5>
+                <ul class="mb-0">
+                  <li>Bench Press – 3×8–12</li>
+                  <li>Incline DB Press – 3×10–12</li>
+                  <li>Overhead Press – 3×8–10</li>
+                  <li>Dips – 3×8–12</li>
+                </ul>
+              </div></div></div>
+              <div class="col-lg-6"><div class="card border-0 shadow-sm"><div class="card-body p-4">
+                <h5 class="text-success"><i class="fas fa-dumbbell me-2"></i>Pull Day</h5>
+                <ul class="mb-0">
+                  <li>Deadlift – 3×6–8</li>
+                  <li>Pull-ups – 3×6–10</li>
+                  <li>Barbell Row – 3×8–12</li>
+                  <li>Bicep Curls – 3×12–15</li>
+                </ul>
+              </div></div></div>
+            </div>
+          </div>
+
+          <div id="muscleHomeContent" style="display:none">
+            <div class="row g-4">
+              <div class="col-lg-6"><div class="card border-0 shadow-sm"><div class="card-body p-4">
+                <h5 class="text-success"><i class="fas fa-home me-2"></i>Upper Body</h5>
+                <ul class="mb-0">
+                  <li>Push-ups – 3×15</li>
+                  <li>Pike Push-ups – 3×10</li>
+                  <li>Chair Dips – 3×12</li>
+                </ul>
+              </div></div></div>
+              <div class="col-lg-6"><div class="card border-0 shadow-sm"><div class="card-body p-4">
+                <h5 class="text-success"><i class="fas fa-home me-2"></i>Lower Body</h5>
+                <ul class="mb-0">
+                  <li>Bodyweight Squats – 4×20</li>
+                  <li>Lunges – 3×12/leg</li>
+                  <li>Calf Raises – 4×25</li>
+                </ul>
+              </div></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAT LOSS -->
+        <div class="tab-pane fade" id="fat">
+          <div class="text-center mb-4">
+            <h2 class="fw-bold">Fat Loss Program</h2>
+            <p class="text-muted">HIIT and cardio to shred fat</p>
+          </div>
+          <div class="row g-4">
+            <div class="col-lg-6"><div class="card border-0 shadow-sm"><div class="card-body p-4">
+              <h5 class="text-success"><i class="fas fa-fire me-2"></i>HIIT Circuit</h5>
+              <ul class="mb-0"><li>Burpees – 30s</li><li>Mountain Climbers – 30s</li><li>Jump Squats – 30s</li><li>Rest – 60s × 5 rounds</li></ul>
+            </div></div></div>
+            <div class="col-lg-6"><div class="card border-0 shadow-sm"><div class="card-body p-4">
+              <h5 class="text-success"><i class="fas fa-running me-2"></i>Cardio</h5>
+              <ul class="mb-0"><li>Jogging – 20 min</li><li>Jump Rope – 5×2 min</li><li>Row Machine – 5×500m</li></ul>
+            </div></div></div>
+          </div>
+        </div>
+
+        <!-- RECOMP -->
+        <div class="tab-pane fade" id="recomp">
+          <div class="text-center mb-4">
+            <h2 class="fw-bold">Recomposition Program</h2>
+            <p class="text-muted">Build muscle while losing fat</p>
+          </div>
+          <div class="row g-4">
+            <div class="col-lg-6"><div class="card border-0 shadow-sm"><div class="card-body p-4">
+              <h5 class="text-success"><i class="fas fa-balance-scale me-2"></i>Day A</h5>
+              <ul class="mb-0"><li>Bench Press – 3×8</li><li>Pull-ups – 3×8</li><li>Squats – 3×12</li></ul>
+            </div></div></div>
+            <div class="col-lg-6"><div class="card border-0 shadow-sm"><div class="card-body p-4">
+              <h5 class="text-success"><i class="fas fa-balance-scale me-2"></i>Day B</h5>
+              <ul class="mb-0"><li>Overhead Press – 3×8</li><li>Deadlift – 3×6</li><li>Lunges – 3×12</li></ul>
+            </div></div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CALENDAR LINK -->
+      <div class="text-center mt-5">
+        <a href="workout-calendar.html" class="btn btn-lg btn-success"><i class="fas fa-calendar-alt me-2"></i>View 12-Week Workout Calendar</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-dark text-white text-center py-4">
+    <div class="container"><p class="mb-2">© 2025 FitLife. All rights reserved.</p>
+      <div><a href="#" class="text-white me-3"><i class="fab fa-facebook fa-lg"></i></a>
+        <a href="#" class="text-white me-3"><i class="fab fa-instagram fa-lg"></i></a>
+        <a href="#" class="text-white"><i class="fab fa-twitter fa-lg"></i></a></div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.getElementById("muscleGym").addEventListener("change",()=>{muscleGymContent.style.display="block";muscleHomeContent.style.display="none"});
+    document.getElementById("muscleHome").addEventListener("change",()=>{muscleGymContent.style.display="none";muscleHomeContent.style.display="block"});
+  </script>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nutrition Plans – FitLife</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+  <link href="css/style.css" rel="stylesheet"/>
+  <style>.card{transition:transform .3s, box-shadow .3s}.card:hover{transform:translateY(-6px);box-shadow:0 10px 20px rgba(0,0,0,.2)}</style>
+</head>
+<body>
+  <!-- NAV -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html"><i class="fas fa-dumbbell me-2"></i>FitLife</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav"><span class="navbar-toggler-icon"></span></button>
+      <div id="nav" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="workout.html">Workout</a></li>
+          <li class="nav-item"><a class="nav-link active" href="nutrition.html">Nutrition</a></li>
+          <li class="nav-item"><a class="nav-link" href="feedback.html">Feedback</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HEADER -->
+  <section class="py-5 bg-success text-white" style="margin-top:76px">
+    <div class="container text-center">
+      <h1 class="display-5 fw-bold mb-2">Nutrition Plans</h1>
+      <p class="lead mb-0">Fuel your body with simple, affordable meals</p>
+    </div>
+  </section>
+
+  <!-- TABS -->
+  <section class="py-5">
+    <div class="container">
+      <ul class="nav nav-pills justify-content-center mb-5" role="tablist">
+        <li class="nav-item"><button class="nav-link active" data-bs-toggle="pill" data-bs-target="#veg" type="button"><i class="fas fa-leaf me-2"></i>Vegetarian</button></li>
+        <li class="nav-item"><button class="nav-link" data-bs-toggle="pill" data-bs-target="#vegan" type="button"><i class="fas fa-seedling me-2"></i>Vegan</button></li>
+        <li class="nav-item"><button class="nav-link" data-bs-toggle="pill" data-bs-target="#nonveg" type="button"><i class="fas fa-drumstick-bite me-2"></i>Non-Vegetarian</button></li>
+      </ul>
+
+      <div class="tab-content">
+        <!-- VEG -->
+        <div class="tab-pane fade show active" id="veg">
+          <div class="row text-center mb-3"><h2 class="fw-bold">Vegetarian Meal Plan</h2><p class="text-muted">Protein-rich plant meals</p></div>
+          <div class="row g-4">
+            <div class="col-lg-6"><div class="card border-0 shadow-sm"><div class="card-body p-4">
+              <h5 class="text-success"><i class="fas fa-sun me-2"></i>Breakfast (450 cal, 25g protein)</h5>
+              <ul class="mb-0"><li>Oatmeal + milk + banana</li><li>Peanut butter + chia seeds</li><li>Optional: protein scoop</li></ul>
+            </div></div></div>
+            <div class="col-lg-6"><div class="card border-0 shadow-sm"><div class="card-body p-4">
+              <h5 class="text-success"><i class="fas fa-cloud-sun me-2"></i>Lunch (550 cal, 30g protein)</h5>
+              <ul class="mb-0"><li>Quinoa + chickpeas</li><li>Cottage cheese + avocado</li></ul>
+            </div></div></div>
+          </div>
+        </div>
+
+        <!-- VEGAN -->
+        <div class="tab-pane fade" id="vegan">
+          <div class="row text-center mb-3"><h2 class="fw-bold">Vegan Meal Plan</h2><p class="text-muted">Complete plant-based nutrition</p></div>
+          <div class="row g-4">
+            <div class="col-lg-6"><div class="card border-0 shadow-sm"><div class="card-body p-4">
+              <h5 class="text-success"><i class="fas fa-sun me-2"></i>Breakfast (400 cal, 20g protein)</h5>
+              <ul class="mb-0"><li>Soy protein smoothie + fruits</li><li>Granola + almond butter</li></ul>
+            </div></div></div>
+            <div class="col-lg-6"><div class="card border-0 shadow-sm"><div class="card-body p-4">
+              <h5 class="text-success"><i class="fas fa-cloud-sun me-2"></i>Lunch (500 cal, 25g protein)</h5>
+              <ul class="mb-0"><li>Quinoa + black beans</li><li>Kale + tahini dressing</li></ul>
+            </div></div></div>
+          </div>
+        </div>
+
+        <!-- NON-VEG -->
+        <div class="tab-pane fade" id="nonveg">
+          <div class="row text-center mb-3"><h2 class="fw-bold">Non-Vegetarian Meal Plan</h2><p class="text-muted">Lean meats & high protein</p></div>
+          <div class="row g-4">
+            <div class="col-lg-6"><div class="card border-0 shadow-sm"><div class="card-body p-4">
+              <h5 class="text-success"><i class="fas fa-sun me-2"></i>Breakfast (500 cal, 35g protein)</h5>
+              <ul class="mb-0"><li>3 eggs + 2 whites</li><li>Whole grain toast</li><li>Turkey bacon</li></ul>
+            </div></div></div>
+            <div class="col-lg-6"><div class="card border-0 shadow-sm"><div class="card-body p-4">
+              <h5 class="text-success"><i class="fas fa-cloud-sun me-2"></i>Lunch (600 cal, 40g protein)</h5>
+              <ul class="mb-0"><li>Grilled chicken breast</li><li>Brown rice + vegetables</li></ul>
+            </div></div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- DOWNLOAD -->
+      <div class="text-center mt-5">
+        <a href="assets/meal-plan.pdf" class="btn btn-lg btn-success" download>
+          <i class="fas fa-download me-2"></i>Download Full Meal Plan (PDF)
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TIPS -->
+  <section class="py-5 bg-light">
+    <div class="container text-center">
+      <h2 class="fw-bold mb-4">Nutrition Tips</h2>
+      <div class="row g-4">
+        <div class="col-md-4"><div class="card border-0 shadow-sm"><div class="card-body p-4">
+          <i class="fas fa-tint fa-2x text-success mb-3"></i><h5>Stay Hydrated</h5><p class="text-muted mb-0">Drink 2–3 L water daily.</p>
+        </div></div></div>
+        <div class="col-md-4"><div class="card border-0 shadow-sm"><div class="card-body p-4">
+          <i class="fas fa-clock fa-2x text-success mb-3"></i><h5>Meal Timing</h5><p class="text-muted mb-0">Eat balanced meals every 3–4 hours.</p>
+        </div></div></div>
+        <div class="col-md-4"><div class="card border-0 shadow-sm"><div class="card-body p-4">
+          <i class="fas fa-balance-scale fa-2x text-success mb-3"></i><h5>Portion Control</h5><p class="text-muted mb-0">Balance carbs, protein, and healthy fats.</p>
+        </div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-dark text-white text-center py-4">
+    <div class="container"><p class="mb-2">© 2025 FitLife. All rights reserved.</p>
+      <div><a href="#" class="text-white me-3"><i class="fab fa-facebook fa-lg"></i></a>
+        <a href="#" class="text-white me-3"><i class="fab fa-instagram fa-lg"></i></a>
+        <a href="#" class="text-white"><i class="fab fa-twitter fa-lg"></i></a></div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
